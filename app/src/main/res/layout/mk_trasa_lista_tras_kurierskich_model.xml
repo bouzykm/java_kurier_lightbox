@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTrasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="5dp"
+        android:text="Trasa"
+        android:textColor="#000000"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/tvLiczbaToreb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150sp"
+
+        android:layout_marginTop="2sp"
+        android:text="7"
+        android:textColor="#316F33"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/tvLiczbaBoxow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230sp"
+        android:layout_marginTop="2sp"
+        android:text="55"
+        android:textColor="#316F33"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/tvLiczbaBoxowOstTor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="310sp"
+        android:layout_marginTop="2sp"
+        android:text="3"
+        android:textColor="#316F33"
+        android:textSize="26sp" />
+
+
+</RelativeLayout>

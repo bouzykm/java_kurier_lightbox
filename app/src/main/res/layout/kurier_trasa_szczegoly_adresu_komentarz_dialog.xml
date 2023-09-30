@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvUwagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/wprowad_komentarz_kt_ry_zostanie_wys_any_do_biura_mo_e_to_by_opis_dotycz_cy_nowej_formy_dostarczenia_pude_ek_kod_do_domofonu_lub_inna_informacja_dotycz_ca_wybranego_adresu"
+        android:textAlignment="inherit"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etKomentarzNowe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvUwagi"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/naci_nij_by_wprowadzi_tekst"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>

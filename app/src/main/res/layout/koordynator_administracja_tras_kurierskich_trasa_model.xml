@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvAdres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="5dp"
+        android:text="@string/ulica"
+        android:textColor="#006000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvDzielnica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAdres"
+        android:layout_alignStart="@+id/tvAdres"
+        android:text="@string/dzielnica"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvStatusDostarczenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvDzielnica"
+        android:layout_alignTop="@+id/tvDzielnica"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@+id/tvDzielnica"
+        android:text="@string/tick" />
+
+    <TextView
+        android:id="@+id/tvGodzinaOd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvGodzinaDo"
+        android:layout_alignStart="@+id/tvDzielnica"
+        android:layout_alignBottom="@+id/tvGodzinaDo"
+        android:text="@string/od"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvGodzinaDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDzielnica"
+        android:layout_toEndOf="@+id/tvGodzinaOd"
+        android:text="@string/doo"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvRaportDostarczenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGodzinaOd"
+        android:layout_alignStart="@+id/tvAdres"
+        android:text="Raport dostarczenia"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="13sp" />
+
+
+</RelativeLayout>

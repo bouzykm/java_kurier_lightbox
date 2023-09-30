@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu_background2"
+    tools:context="com.lbapp.Menu.Menu">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMessages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/White"
+        android:drawableTop="@drawable/menu_ic_messages"
+        android:onClick="onMessagesClicked"
+        android:scaleType="center"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVertical2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_ic_messages"
+        />
+
+    <TextView
+        android:id="@+id/tvMessagesCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/circle_background"
+        android:layout_marginEnd="10dp"
+        android:clickable="false"
+        android:elevation="10dp"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fabMessages"
+        app:layout_constraintEnd_toEndOf="@+id/guidelineVertical2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/White"
+        android:drawableTop="@drawable/menu_ic_settings"
+        android:onClick="onSettingsClicked"
+        android:scaleType="center"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:layout_constraintRight_toLeftOf="@+id/fabMessages"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_ic_settings" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/White"
+        android:drawableTop="@drawable/menu_ic_help"
+        android:onClick="onHelpClicked"
+        android:scaleType="center"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:layout_constraintRight_toLeftOf="@+id/fabSettings"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_ic_help" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabWhatsNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/White"
+        android:drawableTop="@drawable/menu_ic_whatsnew"
+        android:onClick="onWhatsNewClicked"
+        android:scaleType="center"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:layout_constraintRight_toLeftOf="@+id/fabHelp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_ic_whatsnew" />
+
+    <Button
+        android:id="@+id/btnCourier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6FFFFFF"
+        android:drawableTop="@drawable/menu_ic_courier"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="onCourierClicked"
+        android:outlineProvider="bounds"
+        android:text="Kurier"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal1"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVertical1"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVertical0"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal0" />
+
+    <Button
+        android:id="@+id/btnMasterkurier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6FFFFFF"
+        android:drawableTop="@drawable/menu_ic_masterkurier"
+        android:onClick="onMastercourierClicked"
+        android:outlineProvider="bounds"
+        android:text="MasterKurier"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal1"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVertical2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVertical1"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal0" />
+
+    <Button
+        android:id="@+id/btnCoordinator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6FFFFFF"
+        android:drawableTop="@drawable/menu_ic_coordinator"
+        android:onClick="onCoordinatorClicked"
+        android:outlineProvider="bounds"
+        android:text="Koordynator"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal2"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVertical1"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVertical0"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal1" />
+
+    <Button
+        android:id="@+id/btnAdministrator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6FFFFFF"
+        android:drawableTop="@drawable/menu_ic_administrator"
+        android:onClick="onAdministratorClicked"
+        android:outlineProvider="bounds"
+        android:text="Administrator"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal2"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVertical2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVertical1"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal1" />
+
+    <Button
+        android:id="@+id/btnEmergencyCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6FFFFFF"
+        android:drawableTop="@drawable/menu_ic_emergency_call"
+        android:onClick="onMenuEmergencyCallClicked"
+        android:outlineProvider="bounds"
+        android:text="Połącz z BOK"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal3"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVertical1"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVertical0"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal2" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E6FFFFFF"
+        android:drawableTop="@drawable/menu_ic_logout"
+        android:onClick="onLogoutClicked"
+        android:outlineProvider="bounds"
+        android:text="Wyloguj się"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHorizontal3"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineVertical2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineVertical1"
+        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal2" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineVertical2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.97" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

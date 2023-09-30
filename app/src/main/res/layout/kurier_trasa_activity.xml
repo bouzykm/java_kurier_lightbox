@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lbapp.Kurier.Trasa.TrasaActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:layout_editor_absoluteX="3dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/btnStatusPakowania"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/kurier_trasa_szczegoly_adresu_button_design_false"
+                android:onClick="onStatusPakowaniaClicked"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/kurier_trasa_content"
+        />
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fabWczesniejszaLista"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_marginBottom="150dp"-->
+<!--        android:layout_marginEnd="@dimen/fab_margin"-->
+<!--        android:elevation="6dp"-->
+<!--        android:src="@android:drawable/ic_menu_revert"-->
+<!--        android:visibility="invisible"-->
+<!--        app:backgroundTint="@android:color/darker_gray" />-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fabObecnaLista"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_marginBottom="90dp"-->
+<!--        android:layout_marginEnd="@dimen/fab_margin"-->
+<!--        android:elevation="6dp"-->
+<!--        android:src="@android:drawable/ic_menu_send"-->
+<!--        app:backgroundTint="@android:color/darker_gray"-->
+<!--        android:visibility="invisible"/>-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:elevation="6dp"
+        android:alpha="0.75"
+        android:src="@android:drawable/ic_menu_today"
+        app:backgroundTint="@color/colorPrimary"
+        android:scaleType="center"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

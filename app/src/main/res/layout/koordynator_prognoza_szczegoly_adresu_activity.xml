@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Koordynator.Prognoza.SzczegolyAdresuPrognozyActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <TextView
+                android:id="@+id/tvDzielnica"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="20dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-condensed"
+                android:maxLines="1"
+                android:text="@string/dzielnica"
+                android:textColor="@android:color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/tvGodzina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="end"
+                android:text="@string/godzina"
+                android:textColor="@android:color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/tvAdres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvDzielnica"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="45dp"
+                android:drawableStart="?android:attr/actionModeCloseDrawable"
+                android:text="@string/adresObject"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="44sp" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/koordynator_prognoza_szczegoly_adresu_content" />
+
+    <ru.dimorinny.floatingtextbutton.FloatingTextButton
+        android:id="@+id/ftbZmienTrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="100dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:floating_background_color="@android:color/holo_blue_dark"
+        app:floating_icon="@android:drawable/stat_notify_sync"
+        app:floating_title="           Zmień trasę           "
+        app:floating_title_color="@android:color/white" />
+
+    <ru.dimorinny.floatingtextbutton.FloatingTextButton
+        android:id="@+id/ftbDodajUwage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:floating_background_color="@android:color/holo_orange_dark"
+        app:floating_icon="@android:drawable/ic_dialog_alert"
+        app:floating_title="          Dodaj uwagę          "
+        app:floating_title_color="@android:color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:onClick="onMapaClicked"
+        android:scaleType="center"
+        app:backgroundTint="@android:color/holo_green_dark"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|start"
+        app:srcCompat="@android:drawable/ic_dialog_map"
+        app:useCompatPadding="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabTelefon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:onClick="onTelefonClicked"
+        android:scaleType="center"
+        app:backgroundTint="@android:color/holo_green_light"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|start"
+        app:srcCompat="@drawable/kurier_trasa_szczczegoly_adresu_ic_telefon"
+        app:useCompatPadding="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="220dp"
+        android:onClick="onSMSClicked"
+        android:scaleType="center"
+        app:backgroundTint="@android:color/holo_orange_light"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|start|center"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        app:useCompatPadding="true" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

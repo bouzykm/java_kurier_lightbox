@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvAdres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginRight="5dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="5dp"
+        android:text="@string/ulica"
+        android:textColor="#006000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvDzielnica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAdres"
+        android:layout_alignStart="@+id/tvAdres"
+        android:layout_marginRight="25dp"
+        android:text="@string/dzielnica"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvGodzinaOd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvGodzinaDo"
+        android:layout_alignStart="@+id/tvDzielnica"
+        android:layout_alignBottom="@+id/tvGodzinaDo"
+        android:text="@string/od"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvGodzinaDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDzielnica"
+        android:layout_toEndOf="@+id/tvGodzinaOd"
+        android:text="@string/doo"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvSymbolTrasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvDzielnica"
+        android:layout_alignTop="@+id/tvDzielnica"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/tvDzielnica"
+        android:layout_toLeftOf="@+id/tvAdres"
+        android:gravity="center"
+        android:text="GDA32"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvRaport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvDzielnica"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="@string/tick" />
+
+
+</RelativeLayout>

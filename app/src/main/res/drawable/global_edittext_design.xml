@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+    <!-- kolor tla pola tekstowego -->
+    <solid android:color="@color/Platinum"
+        android:background="@android:drawable/dialog_holo_light_frame"/>
+
+</shape>
+

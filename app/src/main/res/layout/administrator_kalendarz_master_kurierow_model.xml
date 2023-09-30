@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgMasterkurier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@+id/tvTrasaMasterKurier"
+        android:text="@string/tick"
+        app:srcCompat="@drawable/administrator_kalendarz_master_kurierow_ic_model" />
+
+    <TextView
+        android:id="@+id/tvDataKursu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginRight="5dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="5dp"
+        android:text="Dane masterkuriera"
+        android:textColor="#006000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvTrasaMasterKurier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDataKursu"
+        android:layout_alignStart="@+id/tvDataKursu"
+        android:layout_marginRight="25dp"
+        android:text="Trasa MasterKurierska"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
